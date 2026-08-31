@@ -5,7 +5,7 @@ locals {
     for k1, v1 in var.transfer_web_apps : {
       for k2, v2 in coalesce(v1.transfer_web_app_customizations, {}) :
       "${k1}/${k2}" => merge(v2, {
-        web_app_id = module.transfer_web_apps.transfer_web_apps_id["${k1}"]
+        web_app_id = module.transfer_web_apps.transfer_web_apps_web_app_id["${k1}"]
       })
     }
   ]...)
