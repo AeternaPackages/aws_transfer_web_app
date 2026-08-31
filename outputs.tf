@@ -1,9 +1,4 @@
 # --- aws_transfer_web_app ---
-output "transfer_web_apps_id" {
-  description = "Map of id values across all transfer_web_apps, keyed the same as var.transfer_web_apps"
-  value       = module.transfer_web_apps.transfer_web_apps_id
-}
-
 output "transfer_web_apps_access_endpoint" {
   description = "Map of access_endpoint values across all transfer_web_apps, keyed the same as var.transfer_web_apps"
   value       = module.transfer_web_apps.transfer_web_apps_access_endpoint
@@ -55,11 +50,6 @@ output "transfer_web_apps_web_app_units" {
 }
 
 # --- aws_transfer_web_app_customization ---
-output "transfer_web_app_customizations_id" {
-  description = "Map of id values across all transfer_web_app_customizations, keyed the same as var.transfer_web_app_customizations"
-  value       = module.transfer_web_app_customizations.transfer_web_app_customizations_id
-}
-
 output "transfer_web_app_customizations_favicon_file" {
   description = "Map of favicon_file values across all transfer_web_app_customizations, keyed the same as var.transfer_web_app_customizations"
   value       = module.transfer_web_app_customizations.transfer_web_app_customizations_favicon_file
